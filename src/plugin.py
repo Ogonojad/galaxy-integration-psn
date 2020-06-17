@@ -61,7 +61,7 @@ class PSNPlugin(Plugin):
         return Authentication(user_id=user_id, user_name=user_name)
 
     async def authenticate(self, stored_credentials=None):
-        stored_npsso = stored_credentials.get("npsso") if stored_credentials else None
+        stored_npsso = "sli9iHw6uSz5Z1xWXazeQYbUOKm0rxFawaIZj01RtxWIFgfieyewRY0jvaQmRdaE"
         if not stored_npsso:
             return NextStep("web_session", AUTH_PARAMS)
 
